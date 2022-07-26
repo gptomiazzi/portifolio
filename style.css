@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+    --profile-area: 1 / 1 / 2 / 2;
+    --links-area: 2 / 1 / 3 / 2;
+    --technologies-area: 3 / 1 / 4 / 2; 
+    --experiences-area: 4 / 1 / 5 / 2;
+    --education-area: 5 / 1 / 6 / 2;
+    --project-one-area: 1 / 2 / 2 / 3;
+    --project-two-area: 2 / 2 / 3 / 3;
+}
+
+body {
+    font-family: 'Merriweather Sans';
+    background: var(--body-bg-color);
+}
+
+.grid {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 348px 952px;
+    grid-template-rows: 292px 348px 208px 349px 352px;
+    grid-column-gap: 60px;
+    grid-row-gap: 30px;
+}
+
+.cards {
+    background: var(--bg-cards);
+    border-radius: 1em;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+    
+.profile { 
+    grid-area: var(--profile-area);
+    justify-content: center;
+}
+.profile-picture {
+    border: 2px solid #00FF00;
+    margin: 32px 110px 132px 110px;
+    background: lightblue;
+    border-radius: 50%;
+    width: 128px;
+    height: 128px;
+}
+.profile-name {
+    grid-area: var(--profile-area);
+    margin: 190px 76px 76px 76px;
+    color: var(--text-color);
+    font-size: 23px;
+    font-weight: 700;
+}
+.profile-role {
+    grid-area: var(--profile-area);
+    margin: 226px 110px 49px 110px;
+    color: var(--text-color);
+    font-size: 13px;
+    line-height: 16.34px;
+    font-weight: 300;
+}
+
+.links {
+    grid-area: var(--links-area) 
+    
+}
+.technologies { 
+    grid-area: var(--technologies-area);
+    
+}
+.experiences { grid-area: var(--experiences-area) }
+.education { grid-area: var(--education-area) }
+.project-one { grid-area: var(--project-one-area) }
+.project-two { grid-area: var(--project-two-area) }
